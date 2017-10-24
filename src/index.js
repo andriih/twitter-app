@@ -7,6 +7,7 @@ import store from './state'
 
 import fetch from 'isomorphic-fetch'
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -39,7 +40,7 @@ store.dispatch({
 	],
 })
 
-fetch('https://api.github.com/repos/octocat/Hello-World/issues/1347')
+fetch('https://api.github.com/repos/Yomguithereal/baobab/issues')
 	.then((r) => r.json())
 	.then((r) => console.log(r))
 
